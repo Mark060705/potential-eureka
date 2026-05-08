@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package javaapplication4;
+package main;
 
 /**
  *
@@ -10,9 +10,10 @@ package javaapplication4;
  */
 public class Fuvar {
     private String rendszam, fizetesiMod;
-    private int ido, osszeg;
+    private int ido;
+    private double osszeg;
 
-    public Fuvar(String rendszam, String fizetesiMod, int ido, int osszeg) {
+    public Fuvar(String rendszam, int ido, double osszeg, String fizetesiMod) {
         this.rendszam = rendszam;
         this.fizetesiMod = fizetesiMod;
         this.ido = ido;
@@ -31,7 +32,7 @@ public class Fuvar {
         return ido;
     }
 
-    public int getOsszeg() {
+    public double getOsszeg() {
         return osszeg;
     }
     
